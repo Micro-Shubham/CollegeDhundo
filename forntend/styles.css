@@ -64,7 +64,22 @@ nav .navigation ul li a:hover{
     font-size:0.9rem;
     line-height: 25px;
 }
-/* College cart */
-.college01 {
-    
+/* features */
+#features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .college01 {
+    background-color:wheat;
+    text-align: start;
+}
+#features .college01 i {
+    font-size: 2.3rem;
+    color:rgb(44,44,80);
+}
+#features .college01 h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:rgb(44,44,80);
+    padding:30px 0 7px 0;
 }
