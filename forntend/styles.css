@@ -64,22 +64,59 @@ nav .navigation ul li a:hover{
     font-size:0.9rem;
     line-height: 25px;
 }
-/* features */
-#features {
-    padding: 5vw 8vw 0 8vw;
+/* College */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
-#features .college01 {
-    background-color:wheat;
-    text-align: start;
+ 
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
 }
-#features .college01 i {
-    font-size: 2.3rem;
-    color:rgb(44,44,80);
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
 }
-#features .college01 h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color:rgb(44,44,80);
-    padding:30px 0 7px 0;
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px; /* Base width for larger screens */
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+    min-width: 120px; /* Minimum width for smaller screens */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    color: #333;
+    /* Allow text to shrink if necessary */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
