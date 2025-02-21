@@ -120,4 +120,82 @@ h1 {
     -ms-hyphens: auto;
     hyphens: auto;
 }
+/* footer */
+footer {
+    background-color: #0b01019e; /* Red color from the image */
+    color: white;
+    padding: 20px 0;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; /* Allows items to wrap naturally on smaller screens */
+    gap: 20px; /* Adds space between sections */
+}
+
+.footer-section {
+    flex: 1; /* Allows sections to grow and shrink equally */
+    min-width: 250px; /* Ensures sections don’t get too narrow on smaller screens */
+    padding: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    margin: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 10px auto 0;
+    padding: 0 20px;
+    font-size: 12px;
+    border-top: 1px solid rgba(0, 20, 110, 0.1);
+    flex-wrap: wrap; /* Allows items to wrap naturally on smaller screens */
+    gap: 10px; /* Adds space between items when wrapped */
+}
