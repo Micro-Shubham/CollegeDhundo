@@ -9,9 +9,9 @@
 }
 /* navigation */
 nav {
-    background-color: #fff;
+    background-color: white;
     padding: 1rem;
-    border-bottom: 2px solid #ff0000; /* Red border at the bottom */
+    border-bottom: 2px solid #3a32320f; /* Red border at the bottom */
     position: fixed;
     width: 100%;
     top: 0;
@@ -304,4 +304,75 @@ footer {
 .services-button:hover {
     background-color: #333;
 }
+
+/* about us  */
+
+
+/* Main container for the About Us section, using Flexbox for layout and responsiveness */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Enables wrapping for responsiveness without media queries */
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Heading section at the top, centered using Flexbox */
+.about-heading {
+    width: 100%; /* Spans full width */
+    text-align: center;
+    margin-bottom: 2rem; /* Space before the image */
+}
+
+/* Image section with Flexbox for centering the image, simplified after removing the list */
+.about-image {
+    flex: 1;
+    min-width: 250px; /* Minimum width to prevent excessive shrinking on narrow screens - part of Flexbox responsiveness */
+    max-width: 400px; /* Limits image width for consistency - part of Flexbox responsiveness */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically within its flex container */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Content section with Flexbox flexibility for width adjustment, placed below the image */
+.about-content {
+    flex: 2; /* Takes more space than the image - part of Flexbox responsiveness */
+    min-width: 300px; /* Minimum width to ensure readability on narrow screens - part of Flexbox responsiveness */
+    max-width: 800px; /* Limits content width for readability - part of Flexbox responsiveness */
+    padding: 1rem;
+}
+
+.about-content h2 {
+    color: #de0f0f;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.about-content p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.about-content h1 {
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5rem;
+}
+
 
